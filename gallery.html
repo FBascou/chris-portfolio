@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Christophe Benoit's portfolio website displays his photos and the store where you can find photography merchandise.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <title>Christophe Benoit</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <header>
+                <nav class="nav-bar">
+                    <ul class="nav-menu">
+                        <li class="nav-bar-item"><a href="/gallery.html">Gallery</a></li>
+                        <li class="nav-bar-item"><a href="/about.html">About</a></li>
+                        <li class="nav-bar-item"><a href="/contact.html">Contact</a></li>
+                        <li class="nav-bar-item-shop"><a href="https://www.redbubble.com/people/chris26130/shop?asc=u" target="_blank">Shop</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBar()">&#9776;</a>
+                </nav>
+            </header>
+            <main>
+                <div class="carousel">
+                    <ul class="myBtnContainer" id="myBtnContainer">
+                        <li class="list active" data-filter="all">Show All</li>
+                        <li class="list" data-filter="nature">Nature</li>
+                        <li class="list" data-filter="urban">Urban</li>
+                        <li class="list" data-filter="people">People</li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/49842061473_c5930482c6_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/50115334471_10f301af47_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/47997029581_474afd23bf_c.jpg" alt="nature"></div>                   
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/28664709937_9d9b395094_c.jpg" alt="urban"></div>   
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/26497735787_58781b6d7a_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48723691308_db5b49b120_c.jpg" alt="nature"></div>                
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/35240144883_aa908457b8_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/50188001347_8f3c71148f_c.jpg" alt="people"></div>   
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/35492701794_f8e92e4b1f_c.jpg" alt="nature"></div>                    
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/33758880278_3480184a70_c.jpg" alt="urban"></div>                          
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49979464068_f4059c3dac_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/49971127736_54ee637afd_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49966798286_3e00f5a244_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48580932611_9eaec9e917_c.jpg" alt="nature"></div> 
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49862492011_ba9f80f45a_c.jpg" alt="people"></div>                    
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49805509318_971a943697_c.jpg" alt="people"></div>                    
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/35256599161_3d94e825c7_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49780753248_a2c3c6e403_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/49746526211_a29f574247_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49739927347_a668c227a5_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/49715886711_af5e0f185c_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/49687046602_986c18ed61_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/49490200497_c0760ae868_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/49454255291_b4b7f1e0a9_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49380799821_eb5327f343_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/49329481397_459f8160c5_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/49295397678_f3dda35096_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/49239439558_82397ff22a_c.jpg" alt="nature"></div>                                               
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/49047050852_def73b4dea_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/29241245838_e8e5591ca7_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/49030146676_34d903fb7a_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/50736012463_7e112af65e_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48978369937_61eaff1910_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48960021177_55cda395bb_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/24551091158_3d3800cdf6_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/48824052211_75e710b956_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48796529188_9bedecc987_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48784491637_591826416d_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48680822488_e601d3acbc_c.jpg" alt="nature"></div>                      
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48639479608_12082b8275_c.jpg" alt="nature"></div>                                            
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/50316263463_d188a67ba5_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48267786262_85d0944808_c.jpg" alt="nature"></div>                      
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/35191194354_93c5c0c117_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/33987762968_ba8d8a8355_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/48117021416_7ed975ee80_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/48015909321_49d7b3e380_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48993412661_feedfa0591_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/47405325162_337ba8f16f_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/47082587211_147e43834c_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/46931169745_73bb9e4e1f_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/46787305562_3d056dbe16_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48374086836_a882ab4a0c_c.jpg" alt="nature"></div> 
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/46571369595_db3457ccaa_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/46378632644_aed74e2955_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/45444049875_19d4086fe3_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/44786708145_8c4a37788b_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48735972366_2fd0e850d6_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/43654565681_5f7a403eb9_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/40378071832_192951d78d_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48054574958_f0a4e27ea3_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/40325542160_8b989d6590_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48667472787_eed2ba5a8e_c.jpg" alt="nature"></div>                       
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/35262205712_47823253f8_c.jpg" alt="nature"></div>                                         
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48122471902_a06d7b0041_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/34626460354_8b425fba02_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/34035486726_d81ca8ccc0_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48399731816_872fe33815_c.jpg" alt="nature"></div>                         
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/48943714323_18ef774ebb_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/33896680292_ae2f1ff25c_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/33250591638_c17071eef2_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/32823227770_8626a92018_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="urban"><img src="/Img/32265301997_dea188ddbb_c.jpg" alt="urban"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/31239006098_4049a2cdbb_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/43883223672_e0886c709d_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/31040918938_688bc939f4_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/30286584327_e2a2e82491_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/29498322158_37f1164ff9_c.jpg" alt="nature"></div>                      
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/28672331504_3787b1c315_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/28386126108_7160d73a01_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/28302440388_1f28c74b38_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/36161788425_2e9ba671a8_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/27957002758_f38db00cff_c.jpg" alt="nature"></div> 
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/49156863292_b5fc429717_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/26652375387_773649de57_c.jpg" alt="nature"></div>                                                    
+                    <div class="itemBox" data-filter-target="people"><img src="/Img/24542346925_f187abb01c_c.jpg" alt="people"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/22205826116_c10f1e45f6_c.jpg" alt="nature"></div>
+                    <div class="itemBox" data-filter-target="nature"><img src="/Img/21609422824_45a8efd78e_c.jpg" alt="nature"></div>
+                </div>
+            </main>
+            <footer>
+                <div class="social">
+                    <ul class="social-menu">
+                        <li class="social-item"><a href="https://www.flickr.com/photos/chris26130/"><i class="fa fa-flickr"></i></a></li>
+                        <li class="social-item"><a href="https://www.instagram.com/kris26130/"><i class="fa fa-instagram"></i></a></li>
+                        <li class="social-item"><a href="https://www.facebook.com/kkris"><i class="fa fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+                <p>
+                    © 2020 Christophe Benoit
+                </p>
+            </footer>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="/js/main.js"></script>      
+    </body>
+</html>
