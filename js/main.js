@@ -9,8 +9,8 @@ function navBar() {
 }
 
 // GALLERY CAROUSEL BUTTON HIGHLIGHT
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("list");
+var btnContainer = document.querySelector('.myBtnContainer');
+var btns = btnContainer.querySelectorAll('.list');
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
@@ -18,25 +18,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
-// GALLERY FILTER JQUERY
-
-// $(document).ready(function() {
-//   // Photo filtering 
-//   $('.list').click(function() {
-//     const value = $(this).attr('data-filter');
-//     if (value == 'all') {
-//       $('.itemBox').show('1000');
-//     } else {
-//       $('.itemBox').not('.' + value).hide('1000');
-//       $('.itemBox').filter('.' + value).show('1000')
-//     }
-//   })
-//   // Button highlighting 
-//   $('.list').click(function() {
-//     $(this).addClass('active').siblings().removeClass('active');
-//   })
-// })
 
 // GALLERY FILTER JS
 var btnContainer = document.querySelector('.myBtnContainer');
@@ -63,7 +44,3 @@ function onMyBtnContainerClick(event) {
 }
 
 btnContainer.addEventListener('click', onMyBtnContainerClick);
-
-// btnContainer.addEventListener('click', function(event) {
-//   onMyBtnContainerClick(event);
-// });
